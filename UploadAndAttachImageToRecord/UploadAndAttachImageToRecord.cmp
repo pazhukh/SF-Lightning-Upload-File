@@ -1,0 +1,11 @@
+<aura:component controller="UploadAndAttachImageToRecordController">
+    <aura:attribute name="imageName" type="String"/>
+    <aura:attribute name="file" type="Object"/>
+    
+    <div class="upload-image">
+        <lightning:input type="file" label="Creative image" name="file" multiple="false"
+                         accept=".png, .jpg" aura:id="imageField" onchange="{!c.handleUploadImage}" />
+        <span class="file-name">{!v.file.name}</span>
+    </div>
+    <lightning:button variant="brand" label="Upload Image" title="Upload Image" onclick="{!c.attachImageToRecord}" />
+</aura:component>

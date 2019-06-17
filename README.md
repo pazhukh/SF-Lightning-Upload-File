@@ -1,0 +1,1 @@
+Add UploadAndAttachImageToRecord component and use UploadAndAttachImageToRecordController.cls to save into SF.
